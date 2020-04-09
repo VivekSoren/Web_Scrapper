@@ -47,12 +47,22 @@
                 </div>
             </div>
         </div>
-</div>
+
+    <form action="{% url 'new_search' %}" method="post">
+        {% csrf_token %}
+        <input type="text" name="search" placeholder="search">
+        <input type="number" name="min" placeholder="min">
+        <input type="number" name="max" placeholder="max">
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+        </button>
+    </form>
+
     {% block content %}
 
 
     {% endblock content %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"></script>
-
+</div>
 </body>
 </html>
