@@ -1,10 +1,10 @@
 .card {
-    height: 400px;
+    height: 400px; /* Your height here */
     overflow: hidden;
 }
 
 .card-image {
-    height: 250px;
+    height: 250px; /* Your height here */
     overflow: hidden;
 }
 
@@ -36,4 +36,3 @@
     font-size: 3em;
     text-align: center;
 }
-
